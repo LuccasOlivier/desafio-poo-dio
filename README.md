@@ -1,18 +1,22 @@
-## Getting Started
+# Abstraindo um Bootcamp Usando Orientação a Objetos em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição do Projeto
 
-## Folder Structure
+Este projeto foi desenvolvido como um desafio para desmistificar a Programação Orientada a Objetos (POO) utilizando Java. O objetivo é praticar os conceitos fundamentais da POO, como Abstração, Encapsulamento, Herança e Polimorfismo, aplicando-os em um problema real.
 
-The workspace contains two folders by default, where:
+## Estrutura do Projeto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O projeto simula um bootcamp com cursos e mentorias, permitindo que desenvolvedores (Devs) se inscrevam e progridam em conteúdos. A estrutura é composta pelas seguintes classes principais:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Conteudo**: Classe abstrata que serve como modelo para cursos e mentorias.
+- **Curso**: Representa um curso com título, descrição e carga horária.
+- **Mentoria**: Representa uma sessão de mentoria com título, descrição e data.
+- **Bootcamp**: Gerencia os conteúdos e devs inscritos.
+- **Dev**: Representa um desenvolvedor que pode se inscrever em bootcamps e progredir nos conteúdos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Pilares da POO Implementados
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. **Abstração**: Utilizada na classe `Conteudo`, permitindo que cursos e mentorias compartilhem atributos comuns.
+2. **Encapsulamento**: Acesso controlado aos atributos através de getters e setters.
+3. **Herança**: `Curso` e `Mentoria` herdam de `Conteudo`.
+4. **Polimorfismo**: Método `calcularXp()` é implementado de forma diferente nas subclasses.
